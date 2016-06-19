@@ -1,0 +1,5 @@
+  PID    VSZ USER     CMD
+ 1865  59088 root     sudo su
+ 1866  56376 root     su
+ 1867  25320 root     bash
+23995  22684 root     ps -o pid,vsz,user,cmd

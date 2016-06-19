@@ -1,0 +1,166 @@
+  PID    VSZ USER     CMD
+    1 119456 root     /sbin/init splash
+    2      0 root     [kthreadd]
+    3      0 root     [ksoftirqd/0]
+    5      0 root     [kworker/0:0H]
+    7      0 root     [rcu_sched]
+    8      0 root     [rcu_bh]
+    9      0 root     [rcuos/0]
+   10      0 root     [rcuob/0]
+   11      0 root     [migration/0]
+   12      0 root     [watchdog/0]
+   13      0 root     [khelper]
+   14      0 root     [kdevtmpfs]
+   15      0 root     [netns]
+   16      0 root     [perf]
+   17      0 root     [khungtaskd]
+   18      0 root     [writeback]
+   19      0 root     [ksmd]
+   20      0 root     [khugepaged]
+   21      0 root     [crypto]
+   22      0 root     [kintegrityd]
+   23      0 root     [bioset]
+   24      0 root     [kblockd]
+   25      0 root     [ata_sff]
+   26      0 root     [md]
+   27      0 root     [devfreq_wq]
+   30      0 root     [kswapd0]
+   31      0 root     [fsnotify_mark]
+   32      0 root     [ecryptfs-kthrea]
+   43      0 root     [kthrotld]
+   44      0 root     [acpi_thermal_pm]
+   45      0 root     [scsi_eh_0]
+   46      0 root     [scsi_tmf_0]
+   47      0 root     [scsi_eh_1]
+   48      0 root     [scsi_tmf_1]
+   54      0 root     [ipv6_addrconf]
+   73      0 root     [deferwq]
+   74      0 root     [charger_manager]
+  114      0 root     [kpsmoused]
+  115      0 root     [scsi_eh_2]
+  116      0 root     [scsi_tmf_2]
+  141      0 root     [kworker/0:1H]
+  143      0 root     [jbd2/sda1-8]
+  144      0 root     [ext4-rsv-conver]
+  183      0 root     [kauditd]
+  198  31284 root     /lib/systemd/systemd-journald
+  209  45048 root     /lib/systemd/systemd-udevd
+  295      0 root     [iprt-VBoxWQueue]
+  297 102356 systemd+ /lib/systemd/systemd-timesyncd
+  489 287316 root     /usr/lib/accountsservice/accounts-daemon
+  495  25180 root     /sbin/cgmanager -m name=systemd
+  497  28672 root     /lib/systemd/systemd-logind
+  502 337236 root     /usr/sbin/ModemManager
+  517  33124 root     /usr/sbin/cron -f
+  519  44268 message+ /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation
+  563 381648 root     /usr/sbin/NetworkManager --no-daemon
+  571 256372 syslog   /usr/sbin/rsyslogd -n
+  573 447504 whoopsie /usr/bin/whoopsie -f
+  575  40192 avahi    avahi-daemon: running [joe-VirtualBox.local]
+  591 285920 root     /usr/lib/policykit-1/polkitd --no-debug
+  604  40068 avahi    avahi-daemon: chroot helper
+  609 272356 root     /usr/sbin/cups-browsed
+  626 256148 root     /usr/sbin/VBoxService --pidfile /var/run/vboxadd-service.pid
+  642  39192 root     /sbin/wpa_supplicant -u -s -O /run/wpa_supplicant
+  645  23456 root     /sbin/dhclient -d -q -sf /usr/lib/NetworkManager/nm-dhcp-helper -pf /run/sendsigs.omit.d/network-manager.dhclient-enp0s3.pid -lf /var/lib/NetworkManager/dhclient-7b468147-cd55-4f47-a904-ab1c304b3c8b-enp0s3.lease -cf /var/lib/NetworkManager/dhclient-enp0s3.conf enp0s3
+  654  52292 nobody   /usr/sbin/dnsmasq --no-resolv --keep-in-foreground --no-hosts --bind-interfaces --pid-file=/run/sendsigs.omit.d/network-manager.dnsmasq.pid --listen-address=127.0.1.1 --conf-file=/var/run/NetworkManager/dnsmasq.conf --cache-size=0 --proxy-dnssec --enable-dbus=org.freedesktop.NetworkManager.dnsmasq --conf-dir=/etc/NetworkManager/dnsmasq.d
+  863 352388 root     /usr/sbin/lightdm
+  876 370396 root     /usr/bin/X -core :0 -seat seat0 -auth /var/run/lightdm/root/:0 -nolisten tcp vt7 -novtswitch
+  882 228160 root     lightdm --session-child 12 15
+  887  45116 joe      /lib/systemd/systemd --user
+  890  60980 joe      (sd-pam)         
+  901  20052 root     /sbin/agetty --noclear tty1 linux
+  902  45276 kernoops /usr/sbin/kerneloops
+  907  45908 joe      /sbin/upstart --user
+  922  49408 joe      /usr/bin/VBoxClient --clipboard
+  923 117792 joe      /usr/bin/VBoxClient --clipboard
+  932  49408 joe      /usr/bin/VBoxClient --display
+  933 115608 joe      /usr/bin/VBoxClient --display
+  939  49408 joe      /usr/bin/VBoxClient --seamless
+  940 115608 joe      /usr/bin/VBoxClient --seamless
+  945  49408 joe      /usr/bin/VBoxClient --draganddrop
+  946 116124 joe      /usr/bin/VBoxClient --draganddrop
+ 1048  32300 joe      upstart-udev-bridge --daemon --user
+ 1062  43820 joe      dbus-daemon --fork --session --address=unix:abstract=/tmp/dbus-pNSc6bMxGi
+ 1074  88176 joe      /usr/lib/x86_64-linux-gnu/hud/window-stack-bridge
+ 1088 292576 joe      gnome-keyring-daemon --start --components pkcs11,secrets
+ 1117 595668 joe      /usr/lib/x86_64-linux-gnu/bamf/bamfdaemon
+ 1120  32236 joe      upstart-dbus-bridge --daemon --session --user --bus-name session
+ 1122  32236 joe      upstart-dbus-bridge --daemon --system --user --bus-name system
+ 1126  40848 joe      upstart-file-bridge --daemon --user
+ 1132 351244 joe      /usr/bin/ibus-daemon --daemonize --xim
+ 1144 671576 joe      /usr/lib/x86_64-linux-gnu/hud/hud-service
+ 1145 271204 joe      /usr/lib/gvfs/gvfsd
+ 1147 875376 joe      /usr/lib/unity-settings-daemon/unity-settings-daemon
+ 1152 337952 joe      /usr/lib/at-spi2-core/at-spi-bus-launcher --launch-immediately
+ 1153 619892 joe      gnome-session --session=ubuntu
+ 1155 646084 joe      /usr/lib/unity/unity-panel-service
+ 1160  42856 joe      /usr/bin/dbus-daemon --config-file=/etc/at-spi2/accessibility.conf --nofork --print-address 3
+ 1161 1092756 joe     compiz
+ 1168 409032 joe      /usr/lib/gvfs/gvfsd-fuse /run/user/1000/gvfs -f -o big_writes
+ 1170 270512 joe      /usr/lib/ibus/ibus-dconf
+ 1171 559624 joe      /usr/lib/ibus/ibus-ui-gtk3
+ 1174 376828 joe      /usr/lib/ibus/ibus-x11 --kill-daemon
+ 1176 206936 joe      /usr/lib/at-spi2-core/at-spi2-registryd --use-gnome-session
+ 1192 178624 joe      /usr/lib/dconf/dconf-service
+ 1232 280140 root     /usr/lib/upower/upowerd
+ 1253 194784 joe      /usr/lib/ibus/ibus-engine-simple
+ 1256 434340 joe      /usr/bin/pulseaudio --start --log-target=syslog
+ 1257 178820 rtkit    /usr/lib/rtkit/rtkit-daemon
+ 1265 363608 joe      /usr/lib/x86_64-linux-gnu/indicator-messages/indicator-messages-service
+ 1267 337648 joe      /usr/lib/x86_64-linux-gnu/indicator-bluetooth/indicator-bluetooth-service
+ 1269 426868 joe      /usr/lib/x86_64-linux-gnu/indicator-power/indicator-power-service
+ 1273 776768 joe      /usr/lib/x86_64-linux-gnu/indicator-datetime/indicator-datetime-service
+ 1278 650076 joe      /usr/lib/x86_64-linux-gnu/indicator-keyboard/indicator-keyboard-service --use-gtk
+ 1284 548936 joe      /usr/lib/x86_64-linux-gnu/indicator-sound/indicator-sound-service
+ 1287 541444 joe      /usr/lib/x86_64-linux-gnu/indicator-printers/indicator-printers-service
+ 1288 631528 joe      /usr/lib/x86_64-linux-gnu/indicator-session/indicator-session-service
+ 1292 395588 joe      /usr/lib/x86_64-linux-gnu/indicator-application/indicator-application-service
+ 1310 425928 joe      /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1
+ 1312 587148 joe      nm-applet
+ 1317 880164 joe      nautilus -n
+ 1320 633376 joe      /usr/lib/evolution/evolution-source-registry
+ 1323 573380 joe      /usr/lib/unity-settings-daemon/unity-fallback-mount-helper
+ 1334 305124 colord   /usr/lib/colord/colord
+ 1387 363272 joe      /usr/lib/gvfs/gvfs-udisks2-volume-monitor
+ 1393 367520 root     /usr/lib/udisks2/udisksd --no-debug
+ 1408 263632 joe      /usr/lib/gvfs/gvfs-mtp-volume-monitor
+ 1414 275828 joe      /usr/lib/gvfs/gvfs-gphoto2-volume-monitor
+ 1421 403212 joe      /usr/lib/gvfs/gvfs-afc-volume-monitor
+ 1436  66332 joe      /usr/lib/x86_64-linux-gnu/gconf/gconfd-2
+ 1439 859040 joe      /usr/lib/evolution/evolution-calendar-factory
+ 1443 349544 joe      /usr/lib/gvfs/gvfsd-trash --spawner :1.7 /org/gtk/gvfs/exec_spaw/0
+ 1451 344936 joe      /usr/lib/gvfs/gvfsd-burn --spawner :1.7 /org/gtk/gvfs/exec_spaw/1
+ 1462 783704 joe      /usr/lib/evolution/evolution-calendar-factory-subprocess --factory contacts --bus-name org.gnome.evolution.dataserver.Subprocess.Backend.Calendarx1439x2 --own-path /org/gnome/evolution/dataserver/Subprocess/Backend/Calendar/1439/2
+ 1472 768076 joe      /usr/lib/evolution/evolution-calendar-factory-subprocess --factory local --bus-name org.gnome.evolution.dataserver.Subprocess.Backend.Calendarx1439x3 --own-path /org/gnome/evolution/dataserver/Subprocess/Backend/Calendar/1439/3
+ 1474 692364 joe      /usr/lib/evolution/evolution-addressbook-factory
+ 1493 776136 joe      /usr/lib/evolution/evolution-addressbook-factory-subprocess --factory local --bus-name org.gnome.evolution.dataserver.Subprocess.Backend.AddressBookx1474x2 --own-path /org/gnome/evolution/dataserver/Subprocess/Backend/AddressBook/1474/2
+ 1519 548976 joe      telepathy-indicator
+ 1527 424764 joe      /usr/lib/telepathy/mission-control-5
+ 1544  39016 joe      dbus-launch --autolaunch 79df5e8c34a4446998577f49f610b062 --binary-syntax --close-stderr
+ 1545  42856 joe      /usr/bin/dbus-daemon --fork --print-pid 5 --print-address 7 --session
+ 1547 439708 joe      /usr/lib/x86_64-linux-gnu/notify-osd
+ 1551 271204 joe      /usr/lib/gvfs/gvfsd
+ 1560 412436 joe      zeitgeist-datahub
+ 1563 426856 joe      /usr/bin/gnome-screensaver --no-daemon
+ 1568 412300 joe      /usr/bin/zeitgeist-daemon
+ 1578 312388 joe      /usr/lib/x86_64-linux-gnu/zeitgeist-fts
+ 1620 520660 joe      update-notifier
+ 1643 688688 joe      /usr/bin/python3 /usr/bin/update-manager --no-update --no-focus-on-map
+ 1669 449936 joe      /usr/lib/x86_64-linux-gnu/deja-dup/deja-dup-monitor
+ 1679 645848 joe      /usr/lib/gnome-terminal/gnome-terminal-server
+ 1685  14852 joe      gnome-pty-helper
+ 1687  27164 joe      bash
+ 1705 566176 joe      deja-dup --prompt
+ 1782      0 root     [kworker/0:1]
+ 1797 975008 joe      /usr/lib/firefox/firefox
+ 1865  59088 root     sudo su
+ 1866  56376 root     su
+ 1867  25320 root     bash
+ 2105      0 root     [kworker/0:2]
+ 2106  90212 root     /usr/sbin/cupsd -l
+ 2121  74192 lp       /usr/lib/cups/notifier/dbus dbus:// 
+ 2122  74192 lp       /usr/lib/cups/notifier/dbus dbus:// 
+23983      0 root     [kworker/u2:1]
+24012      0 root     [kworker/u2:0]
+24019  22684 root     ps -A -o pid,vsz,user,cmd

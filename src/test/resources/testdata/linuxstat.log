@@ -1,0 +1,43 @@
+Active Internet connections (servers and established)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program name
+tcp        0      0 127.0.1.1:53            0.0.0.0:*               LISTEN      -               
+tcp        0      0 127.0.0.1:631           0.0.0.0:*               LISTEN      -               
+tcp        0      0 10.0.2.15:44712         185.31.19.133:443       ESTABLISHED 1926/firefox    
+tcp        0      0 10.0.2.15:44708         185.31.19.133:443       ESTABLISHED 1926/firefox    
+tcp        0      0 10.0.2.15:39862         54.230.11.184:443       ESTABLISHED 1926/firefox    
+tcp        0      0 10.0.2.15:44952         107.22.215.99:80        ESTABLISHED 1926/firefox    
+tcp        0      0 10.0.2.15:44718         185.31.19.133:443       ESTABLISHED 1926/firefox    
+tcp        0      0 10.0.2.15:44714         185.31.19.133:443       ESTABLISHED 1926/firefox    
+tcp        0      0 10.0.2.15:49934         54.230.11.198:443       ESTABLISHED 1926/firefox    
+tcp        0      0 10.0.2.15:44722         185.31.19.133:443       ESTABLISHED 1926/firefox    
+tcp        0      0 10.0.2.15:46828         23.195.69.117:80        ESTABLISHED 1926/firefox    
+tcp        0      0 10.0.2.15:39102         52.200.129.214:443      TIME_WAIT   -               
+tcp        0      0 10.0.2.15:42692         50.112.138.61:443       TIME_WAIT   -               
+tcp        0      0 10.0.2.15:44724         185.31.19.133:443       ESTABLISHED 1926/firefox    
+tcp        0      0 10.0.2.15:44750         185.31.19.133:443       ESTABLISHED 1926/firefox    
+tcp        0      0 10.0.2.15:44748         185.31.19.133:443       ESTABLISHED 1926/firefox    
+tcp        0      0 10.0.2.15:44716         185.31.19.133:443       ESTABLISHED 1926/firefox    
+tcp        0      0 10.0.2.15:39130         52.200.129.214:443      TIME_WAIT   -               
+tcp        0      0 10.0.2.15:49944         54.230.11.198:443       ESTABLISHED 1926/firefox    
+tcp        0      0 10.0.2.15:49940         54.230.11.198:443       ESTABLISHED 1926/firefox    
+tcp        0      0 10.0.2.15:44710         185.31.19.133:443       ESTABLISHED 1926/firefox    
+tcp        0      0 10.0.2.15:49938         54.230.11.198:443       ESTABLISHED 1926/firefox    
+tcp        0      0 10.0.2.15:47516         74.125.206.138:80       ESTABLISHED 1926/firefox    
+tcp        0      0 10.0.2.15:40746         91.189.88.149:80        ESTABLISHED -               
+tcp        0      0 10.0.2.15:49942         54.230.11.198:443       ESTABLISHED 1926/firefox    
+tcp        0      0 10.0.2.15:54702         54.200.236.187:443      TIME_WAIT   -               
+tcp        0      0 10.0.2.15:49936         54.230.11.198:443       ESTABLISHED 1926/firefox    
+tcp        0      0 10.0.2.15:51402         52.32.9.85:443          TIME_WAIT   -               
+tcp        0      0 10.0.2.15:38060         52.24.217.21:443        ESTABLISHED 1926/firefox    
+tcp6       0      0 ::1:631                 :::*                    LISTEN      -               
+tcp6       1      0 ::1:47304               ::1:631                 CLOSE_WAIT  -               
+tcp6       1      0 ::1:47302               ::1:631                 CLOSE_WAIT  -               
+udp        0      0 0.0.0.0:49455           0.0.0.0:*                           -               
+udp        0      0 127.0.1.1:53            0.0.0.0:*                           -               
+udp        0      0 0.0.0.0:68              0.0.0.0:*                           -               
+udp        0      0 0.0.0.0:59996           0.0.0.0:*                           -               
+udp        0      0 0.0.0.0:631             0.0.0.0:*                           -               
+udp        0      0 0.0.0.0:5353            0.0.0.0:*                           -               
+udp6       0      0 :::26775                :::*                                -               
+udp6       0      0 :::34018                :::*                                -               
+udp6       0      0 :::5353                 :::*                                -               

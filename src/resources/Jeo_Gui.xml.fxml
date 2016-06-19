@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import uk.org.freedonia.mapnetstat.gui.MapView?>
+<?import javafx.scene.web.WebView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.cell.*?> 
+<?import javafx.collections.*?> 
+<?import fxmltableview.*?> 
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.stage.Stage?>
+
+ <StackPane fx:id="background" prefHeight="600.0" prefWidth="800.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2">
+
+ 
+ <VBox fx:id="allBox" minWidth="700" fillWidth="true" spacing="10">
+ 	<padding>
+    	<Insets bottom="0.0" left="10.0" right ="10.0" top="10.0"/>
+    </padding>
+
+ <WebView fx:id = "mapView" MapView.topAnchor="0.0" >
+ </WebView>
+ <HBox fx:id="optionBox" spacing="10">
+	 <fx:define>  
+	    <ToggleGroup fx:id="protocolGroup" />  
+	</fx:define>  
+ 	<RadioButton fx:id="tcpButton" text="TCP"  selected="true" onAction="#handleTCPRadioButton"  toggleGroup="$protocolGroup" >
+	 	<tooltip>
+	 		<Tooltip text="Only display TCP connections" />
+	 	</tooltip>
+ 	</RadioButton>
+ 	<RadioButton fx:id="udpButton" text="UDP"  onAction="#handleUDPRadioButton"  toggleGroup="$protocolGroup" >
+ 		 <tooltip>
+	 		<Tooltip text="Only display UDP connections" />
+	 	</tooltip>
+ 	</RadioButton>
+ 	<RadioButton fx:id="allButton" text="ALL"  onAction="#handleAllRadioButton"  toggleGroup="$protocolGroup" >
+ 		 <tooltip>
+	 		<Tooltip text="Display all connections" />
+	 	</tooltip>
+ 	</RadioButton>
+ 	<CheckBox fx:id="localCheckBox" text="Show Local Network Connections" onAction="#handleCheckBox" >
+	 	<tooltip>
+			<Tooltip text="Display connections to private IP addresses" />
+		</tooltip>
+ 	</CheckBox>
+ 	<Button fx:id="refreshButton" text="Refresh Results" onAction="#refreshResults"/>
+ </HBox>
+<TableView fx:id="tableView" >
+  <columnResizePolicy><TableView fx:constant="CONSTRAINED_RESIZE_POLICY"/></columnResizePolicy>
+
+     <columns>
+          <TableColumn text="IP Address" minWidth="80">
+          <cellValueFactory><PropertyValueFactory property="ipAddress" />
+        </cellValueFactory>
+          </TableColumn>
+          <TableColumn text="Port" minWidth="50">
+          <cellValueFactory><PropertyValueFactory property="port" />
+        </cellValueFactory>
+          </TableColumn>
+          <TableColumn text="PID" minWidth="50">
+                    <cellValueFactory><PropertyValueFactory property="pid" />
+        </cellValueFactory>
+          </TableColumn>
+          <TableColumn text="Process Name" minWidth="160">
+                    <cellValueFactory><PropertyValueFactory property="processName" />
+        </cellValueFactory>
+          </TableColumn>
+          <TableColumn text="Memory Usage" minWidth="160">
+                    <cellValueFactory><PropertyValueFactory property="memoryUsage" />
+        </cellValueFactory>
+          </TableColumn>
+          <TableColumn text="Country" minWidth="160">
+                    <cellValueFactory><PropertyValueFactory property="country" />
+        </cellValueFactory>
+          </TableColumn>
+          <TableColumn text="City" minWidth="160">
+                    <cellValueFactory><PropertyValueFactory property="city" />
+        </cellValueFactory>
+          </TableColumn>
+          <TableColumn text="Latitude" minWidth="160">
+                    <cellValueFactory><PropertyValueFactory property="latitude" />
+        </cellValueFactory>
+          </TableColumn>
+          <TableColumn text="Longitude" minWidth="160">
+                    <cellValueFactory><PropertyValueFactory property="longitude" />
+        </cellValueFactory>
+          </TableColumn>
+    </columns>    
+
+</TableView>
+ </VBox>
+</StackPane>
+
