@@ -20,7 +20,7 @@ public class JeoGUIApp extends  Application {
 
 	@Override
 	public void start(Stage primaryStage) throws Exception {
-		primaryStage.setTitle("JeoNetstat");
+		primaryStage.setTitle("MapNetstat");
 		StackPane myGroup = null;
 	    JeoGuiController controller = new JeoGuiController();
 	    JeoData data = new JeoData();
