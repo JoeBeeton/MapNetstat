@@ -10,6 +10,8 @@ import com.maxmind.geoip2.record.Country;
 
 public class FreeGeoIPResolver implements GeoIPResolver {
 
+
+	private static DatabaseReader reader = null;
 	
 	public GeoResult getCountryFromIP( InetAddress ip ) throws IOException {
 		try {
@@ -31,8 +33,11 @@ public class FreeGeoIPResolver implements GeoIPResolver {
 		}
 	}
 
-	private DatabaseReader getDbReader() throws IOException {
-		return new DatabaseReader.Builder( FreeGeoIPResolver.class.getResourceAsStream("/GeoLite2-City.mmdb") ).build();
+	private synchronized DatabaseReader getDbReader() throws IOException {
+		if(reader == null) {
+			reader =  new DatabaseReader.Builder(FreeGeoIPResolver.class.getResourceAsStream("/GeoLite2-City.mmdb")).build();
+		}
+		return reader;
 	}
 	
 	

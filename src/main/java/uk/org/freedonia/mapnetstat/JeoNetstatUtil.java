@@ -9,10 +9,7 @@ import java.util.function.Consumer;
 import uk.org.freedonia.mapnetstat.geo.FreeGeoIPResolver;
 import uk.org.freedonia.mapnetstat.geo.GeoIPResolver;
 import uk.org.freedonia.mapnetstat.geo.GeoResult;
-import uk.org.freedonia.mapnetstat.netstat.ConnectionResolver;
-import uk.org.freedonia.mapnetstat.netstat.ConnectionResolverOptions;
-import uk.org.freedonia.mapnetstat.netstat.ConnectionResult;
-import uk.org.freedonia.mapnetstat.netstat.NetstatIPResolver;
+import uk.org.freedonia.mapnetstat.netstat.*;
 
 
 /**
@@ -56,6 +53,7 @@ public class JeoNetstatUtil {
 		List<ConnectionResult> addresses = connectionResolver.resolveIPList( options );
 		InetAddressGeoResolveConsumer consumer = new InetAddressGeoResolveConsumer( geoResults, geoIPResolver );
 		addresses.stream().parallel().forEach( consumer );
+
 		return geoResults;
 	}
 	
@@ -63,7 +61,7 @@ public class JeoNetstatUtil {
 		private List<GeoResult> results;
 		private GeoIPResolver geoIPResolver;
 
-		public InetAddressGeoResolveConsumer( List<GeoResult> results, GeoIPResolver geoIPResolver ) {
+		InetAddressGeoResolveConsumer( List<GeoResult> results, GeoIPResolver geoIPResolver ) {
 			this.results = results;
 			this.geoIPResolver = geoIPResolver;
 		}

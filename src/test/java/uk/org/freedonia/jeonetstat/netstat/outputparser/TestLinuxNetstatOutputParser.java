@@ -31,13 +31,13 @@ public class TestLinuxNetstatOutputParser {
 		}
 		List<ConnectionResult> results = parser.getAddresses();
 		assertNotNull( results );
-		assertEquals( 21, results.size() );
+		assertEquals( 22, results.size() );
 		boolean matchFound = false;
 		for ( ConnectionResult result : results ) {
 			if ( result.getPid() == 1926 ) {
 				assertNotNull( result.getProcessName() );
 				assertEquals( "firefox", result.getProcessName() );
-				assertEquals( 123000l, result.getMemUsage() );
+				assertEquals( 123000, result.getMemUsage() );
 				matchFound = true;
 			}
 		}
@@ -47,7 +47,7 @@ public class TestLinuxNetstatOutputParser {
 	private PidCommandExecutor getPidResolver() {
 		return new PidCommandExecutor(null, null) {
 			@Override
-			public HashMap<Integer, ProcessResult> executePidCommand() throws IOException, InterruptedException {
+			public HashMap<Integer, ProcessResult> executePidCommand() {
 				HashMap<Integer,ProcessResult> pidResults = new HashMap<>();
 				ProcessResult procResult = new ProcessResult(1926, "firefox", 123000 );
 				pidResults.put(1926, procResult);

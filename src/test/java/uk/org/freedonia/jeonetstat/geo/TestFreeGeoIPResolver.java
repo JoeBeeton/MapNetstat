@@ -18,10 +18,18 @@ import uk.org.freedonia.mapnetstat.geo.GeoResult;
 public class TestFreeGeoIPResolver {
 
 	@Test
-	public void test() throws JsonParseException, JsonMappingException, MalformedURLException, IOException, GeoIp2Exception {
+	public void test() throws  IOException {
 		InetAddress ip = InetAddress.getByName("8.8.8.8");
 		GeoResult geoResult = new FreeGeoIPResolver().getCountryFromIP(ip);
 		assertNotNull( geoResult );
+	}
+
+	@Test
+	public void testWithValidIP() throws  IOException {
+		InetAddress ip = InetAddress.getByName("84.45.230.235");
+		GeoResult geoResult = new FreeGeoIPResolver().getCountryFromIP(ip);
+		assertNotNull( geoResult );
+
 	}
 	
 	

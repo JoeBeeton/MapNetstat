@@ -5,7 +5,7 @@ public enum ProtocolOptions {
 	
 	TCP,
 	UDP,
-	ALL;
+	ALL
 	
 	
 }

@@ -5,6 +5,6 @@ import java.net.InetAddress;
 
 public interface GeoIPResolver {
 	
-	public GeoResult getCountryFromIP( InetAddress ip ) throws IOException;
+	GeoResult getCountryFromIP( InetAddress ip ) throws IOException;
 
 }

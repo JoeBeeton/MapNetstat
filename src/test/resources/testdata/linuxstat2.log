@@ -1,0 +1,11 @@
+(Not all processes could be identified, non-owned process info
+ will not be shown, you would have to be root to see it all.)
+Active Internet connections (servers and established)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program name
+tcp        0      0 127.0.1.1:53            0.0.0.0:*               LISTEN      -
+tcp        0      0 127.0.0.1:631           0.0.0.0:*               LISTEN      -
+tcp        0      0 10.0.2.15:51158         173.194.137.102:443     TIME_WAIT   -
+tcp        0      0 10.0.2.15:51154         173.194.137.102:443     ESTABLISHED 8922/firefox
+tcp        0      0 10.0.2.15:53902         216.58.206.106:443      ESTABLISHED 8922/firefox
+tcp        0      0 10.0.2.15:42200         216.58.206.110:443      ESTABLISHED 8922/firefox
+tcp6       0      0 ::1:631                 :::*                    LISTEN      -

@@ -15,7 +15,7 @@ public class WindowsNetstatCommandResolver implements NetstatCommandResolver {
 			cmd.append(" -p TCP");
 			break;
 		case UDP:
-			cmd.append(" -P UDP");
+			cmd.append(" -p UDP");
 			break;
 		default:
 			break;
