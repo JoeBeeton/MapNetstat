@@ -1,9 +1,9 @@
 # MapNetstat
 Displays connections between your machine and remote systems. If the remote system is on the public internet, it's location is shown on a Map
 ## Prerequisites
-Java 1.8+
-Windows ( Currently )
-At the moment windows is the only supported OS. This is due to the fact that there is no straight Java way of getting the list of processes and ports. So this has to be done by calling native commands on the OS.
+Java 1.8+ . This has to be the Oracle version of Java. OpenJDK is not supported as it does not support JavaFX. 
+Windows or Linux
+Tested on Windows 10 as well as Ubuntu Linux and Fedora
 
 ## Usage
 run the command java -jar mapnetstat.jar
